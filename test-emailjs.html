@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test EmailJS - Cozy Clinic</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #2563eb; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #1d4ed8; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <h1>🧪 Test EmailJS - Cozy Clinic</h1>
+    <p><strong>Hướng dẫn:</strong> Điền thông tin và gửi để test xem email có đến cozyclinic2026@gmail.com không.</p>
+    
+    <form id="testForm">
+        <div class="form-group">
+            <label>Public Key EmailJS:</label>
+            <input type="text" id="publicKey" placeholder="Nhập Public Key từ EmailJS" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Service ID:</label>
+            <input type="text" id="serviceId" placeholder="Nhập Service ID từ EmailJS" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Template ID:</label>
+            <input type="text" id="templateId" placeholder="Nhập Template ID từ EmailJS" required>
+        </div>
+        
+        <hr style="margin: 30px 0;">
+        
+        <h3>Thông tin test đặt lịch:</h3>
+        
+        <div class="form-group">
+            <label>Họ tên:</label>
+            <input type="text" id="testName" value="Nguyễn Văn Test" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Số điện thoại:</label>
+            <input type="tel" id="testPhone" value="0123456789" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" id="testEmail" value="test@example.com">
+        </div>
+        
+        <div class="form-group">
+            <label>Dịch vụ:</label>
+            <select id="testService" required>
+                <option value="internal-medicine">Khám nội tổng quát</option>
+                <option value="cardiology">Bệnh lý tim mạch</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Ngày khám:</label>
+            <input type="date" id="testDate" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Giờ khám:</label>
+            <select id="testTime" required>
+                <option value="08:00">08:00</option>
+                <option value="14:00">14:00</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Ghi chú:</label>
+            <textarea id="testNotes">Đây là test email từ website Cozy Clinic</textarea>
+        </div>
+        
+        <button type="submit">🚀 Test Gửi Email</button>
+    </form>
+    
+    <div id="status"></div>
+    
+    <script>
+        // Set default date to tomorrow
+        document.getElementById('testDate').valueAsDate = new Date(Date.now() + 86400000);
+        
+        document.getElementById('testForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const statusDiv = document.getElementById('status');
+            
+            // Get EmailJS config
+            const publicKey = document.getElementById('publicKey').value;
+            const serviceId = document.getElementById('serviceId').value;
+            const templateId = document.getElementById('templateId').value;
+            
+            if (!publicKey || !serviceId || !templateId) {
+                statusDiv.innerHTML = '<div class="status error">❌ Vui lòng điền đầy đủ thông tin EmailJS!</div>';
+                return;
+            }
+            
+            // Initialize EmailJS
+            emailjs.init({
+                publicKey: publicKey,
+                blockHeadless: true,
+                limitRate: { id: 'app', throttle: 10000 }
+            });
+            
+            // Get form data
+            const serviceNames = {
+                'internal-medicine': 'Khám nội tổng quát',
+                'cardiology': 'Bệnh lý tim mạch'
+            };
+            
+            const formData = {
+                patient_name: document.getElementById('testName').value,
+                patient_phone: document.getElementById('testPhone').value,
+                patient_email: document.getElementById('testEmail').value || 'Không cung cấp',
+                service_name: serviceNames[document.getElementById('testService').value],
+                appointment_date: new Date(document.getElementById('testDate').value).toLocaleDateString('vi-VN'),
+                appointment_time: document.getElementById('testTime').value,
+                notes: document.getElementById('testNotes').value || 'Không có ghi chú',
+                booking_datetime: new Date().toLocaleString('vi-VN'),
+                clinic_email: 'cozyclinic2026@gmail.com'
+            };
+            
+            statusDiv.innerHTML = '<div class="status">⏳ Đang gửi email test...</div>';
+            
+            // Send test email
+            emailjs.send(serviceId, templateId, formData)
+                .then(function(response) {
+                    statusDiv.innerHTML = '<div class="status success">✅ Gửi email test thành công! Kiểm tra hộp thư cozyclinic2026@gmail.com</div>';
+                    console.log('Success:', response);
+                })
+                .catch(function(error) {
+                    statusDiv.innerHTML = '<div class="status error">❌ Lỗi gửi email: ' + JSON.stringify(error) + '</div>';
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+</html>

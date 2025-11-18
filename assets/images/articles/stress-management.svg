@@ -1,0 +1,46 @@
+<svg width="350" height="200" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="200" fill="url(#stressGradient)"/>
+  <defs>
+    <linearGradient id="stressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff"/>
+      <stop offset="100%" style="stop-color:#e9d5ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Brain with zen state -->
+  <ellipse cx="175" cy="90" rx="50" ry="40" fill="#7c3aed" opacity="0.6"/>
+  
+  <!-- Meditation waves -->
+  <circle cx="175" cy="90" r="60" stroke="#7c3aed" stroke-width="2" fill="none" opacity="0.3"/>
+  <circle cx="175" cy="90" r="80" stroke="#7c3aed" stroke-width="2" fill="none" opacity="0.2"/>
+  <circle cx="175" cy="90" r="100" stroke="#7c3aed" stroke-width="2" fill="none" opacity="0.1"/>
+  
+  <!-- Peaceful elements -->
+  <!-- Lotus petals -->
+  <ellipse cx="175" cy="150" rx="30" ry="8" fill="#10b981" opacity="0.4"/>
+  <ellipse cx="160" cy="145" rx="20" ry="6" fill="#10b981" opacity="0.6"/>
+  <ellipse cx="190" cy="145" rx="20" ry="6" fill="#10b981" opacity="0.6"/>
+  
+  <!-- Breathing indicator -->
+  <circle cx="80" cy="80" r="25" fill="#3b82f6" opacity="0.2"/>
+  <path d="M75 85L80 75L85 85" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <path d="M75 75L80 85L85 75" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <text x="80" y="110" font-family="Inter, sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle">Thở sâu</text>
+  
+  <!-- Time management -->
+  <circle cx="270" cy="80" r="20" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M270 70V80L275 85" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <text x="270" y="110" font-family="Inter, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">Thời gian</text>
+  
+  <!-- Stress reduction symbols -->
+  <path d="M80 150C85 140 95 140 100 150C105 160 95 160 90 150C85 160 75 160 80 150Z" fill="#10b981" opacity="0.6"/>
+  
+  <rect x="260" y="140" width="30" height="20" fill="#6366f1" opacity="0.4" rx="4"/>
+  <rect x="265" y="145" width="20" height="10" fill="#6366f1" opacity="0.6" rx="2"/>
+  <text x="275" y="175" font-family="Inter, sans-serif" font-size="10" fill="#6366f1" text-anchor="middle">Yoga</text>
+  
+  <!-- Calm face expression -->
+  <circle cx="165" cy="85" r="3" fill="#ffffff"/>
+  <circle cx="185" cy="85" r="3" fill="#ffffff"/>
+  <path d="M170 95C172 97 178 97 180 95" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+</svg>

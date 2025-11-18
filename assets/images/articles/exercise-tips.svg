@@ -1,0 +1,52 @@
+<svg width="350" height="200" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="200" fill="url(#exerciseGradient)"/>
+  <defs>
+    <linearGradient id="exerciseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Person exercising -->
+  <ellipse cx="175" cy="180" rx="40" ry="10" fill="#cbd5e1" opacity="0.3"/>
+  
+  <!-- Body -->
+  <rect x="165" y="120" width="20" height="60" fill="#3b82f6" rx="10"/>
+  
+  <!-- Head -->
+  <circle cx="175" cy="100" r="15" fill="#3b82f6"/>
+  
+  <!-- Arms in exercise position -->
+  <path d="M155 130L145 120" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M195 130L205 120" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Legs in motion -->
+  <path d="M170 175L160 190" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M180 175L190 190" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Exercise equipment icons -->
+  <!-- Dumbbell -->
+  <rect x="60" y="70" width="40" height="8" fill="#374151" rx="4"/>
+  <rect x="55" y="65" width="10" height="18" fill="#374151" rx="5"/>
+  <rect x="95" y="65" width="10" height="18" fill="#374151" rx="5"/>
+  
+  <!-- Yoga mat -->
+  <rect x="260" y="140" width="60" height="40" fill="#10b981" opacity="0.6" rx="4"/>
+  <rect x="265" y="145" width="50" height="30" fill="#10b981" opacity="0.3" rx="2"/>
+  
+  <!-- Steps/stairs -->
+  <rect x="60" y="140" width="15" height="10" fill="#6b7280"/>
+  <rect x="75" y="130" width="15" height="20" fill="#6b7280"/>
+  <rect x="90" y="120" width="15" height="30" fill="#6b7280"/>
+  
+  <!-- Motion lines -->
+  <path d="M130 110L140 105" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M130 115L140 110" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M210 110L220 105" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M210 115L220 110" stroke="#f59e0b" stroke-width="2"/>
+  
+  <!-- Clock showing time -->
+  <circle cx="280" cy="50" r="20" fill="white" stroke="#d1d5db" stroke-width="2"/>
+  <path d="M280 40V50L285 55" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+  <text x="280" y="25" font-family="Inter, sans-serif" font-size="10" fill="#374151" text-anchor="middle">20 phút</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="url(#heartGradient)"/>
+  <defs>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="50%" style="stop-color:#fde68a"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Heart shape -->
+  <path d="M200 220C200 220 130 160 130 120C130 100 145 85 165 85C180 85 195 95 200 110C205 95 220 85 235 85C255 85 270 100 270 120C270 160 200 220 200 220Z" fill="#dc2626"/>
+  
+  <!-- Heartbeat line -->
+  <path d="M50 150L100 150L120 120L140 180L160 100L180 200L200 150L220 150L240 120L260 180L280 100L300 200L320 150L350 150" stroke="#dc2626" stroke-width="4" fill="none"/>
+  
+  <!-- Medical elements -->
+  <circle cx="80" cy="80" r="25" fill="#10b981" opacity="0.2"/>
+  <path d="M70 80H90M80 70V90" stroke="#10b981" stroke-width="3"/>
+  
+  <circle cx="320" cy="80" r="25" fill="#10b981" opacity="0.2"/>
+  <path d="M310 80H330M320 70V90" stroke="#10b981" stroke-width="3"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="60" cy="220" r="15" fill="#ef4444" opacity="0.3"/>
+  <circle cx="340" cy="220" r="15" fill="#ef4444" opacity="0.3"/>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="250" width="400" height="50" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="275" font-family="Inter, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="600">Chăm sóc tim mạch khỏe mạnh</text>
+</svg>

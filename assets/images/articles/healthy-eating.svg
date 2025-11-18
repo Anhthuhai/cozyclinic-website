@@ -1,0 +1,38 @@
+<svg width="350" height="200" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="200" fill="url(#nutritionGradient)"/>
+  <defs>
+    <linearGradient id="nutritionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4"/>
+      <stop offset="100%" style="stop-color:#dcfce7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Plate -->
+  <circle cx="175" cy="100" r="70" fill="white" stroke="#d1d5db" stroke-width="2"/>
+  
+  <!-- Food portions -->
+  <!-- Vegetables (half plate) -->
+  <path d="M175 30C220 30 255 65 255 110C255 155 220 170 175 170C175 170 175 100 175 100C175 65 140 30 175 30Z" fill="#10b981" opacity="0.6"/>
+  
+  <!-- Protein (quarter) -->
+  <path d="M175 100L175 170C130 170 95 135 95 110C95 85 115 65 140 100Z" fill="#dc2626" opacity="0.6"/>
+  
+  <!-- Grains (quarter) -->
+  <path d="M175 100C175 65 210 30 255 65C255 85 235 100 175 100Z" fill="#f59e0b" opacity="0.6"/>
+  
+  <!-- Healthy icons around plate -->
+  <circle cx="80" cy="60" r="15" fill="#10b981"/>
+  <path d="M75 60L80 55L85 60L80 65Z" fill="white"/>
+  
+  <circle cx="270" cy="60" r="15" fill="#dc2626"/>
+  <circle cx="270" cy="60" r="8" fill="white"/>
+  
+  <circle cx="80" cy="140" r="15" fill="#f59e0b"/>
+  <rect x="75" y="135" width="10" height="10" fill="white" rx="2"/>
+  
+  <circle cx="270" cy="140" r="15" fill="#3b82f6"/>
+  <path d="M265 140H275M270 135V145" stroke="white" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="175" y="190" font-family="Inter, sans-serif" font-size="12" fill="#374151" text-anchor="middle" font-weight="500">Chế độ ăn cân bằng</text>
+</svg>

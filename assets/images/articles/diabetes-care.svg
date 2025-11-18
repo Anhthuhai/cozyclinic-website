@@ -1,0 +1,36 @@
+<svg width="350" height="200" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="200" fill="url(#diabetesGradient)"/>
+  <defs>
+    <linearGradient id="diabetesGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe"/>
+      <stop offset="100%" style="stop-color:#bfdbfe"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Blood glucose meter -->
+  <rect x="100" y="60" width="150" height="80" fill="#374151" rx="8"/>
+  <rect x="110" y="70" width="130" height="50" fill="#1f2937" rx="4"/>
+  <text x="175" y="95" font-family="monospace" font-size="16" fill="#10b981" text-anchor="middle">120 mg/dL</text>
+  <text x="175" y="110" font-family="Arial" font-size="12" fill="#6b7280" text-anchor="middle">Normal</text>
+  
+  <!-- Test strip -->
+  <rect x="260" y="80" width="40" height="8" fill="#fbbf24" rx="4"/>
+  
+  <!-- Healthy food icons -->
+  <circle cx="50" cy="50" r="20" fill="#10b981" opacity="0.2"/>
+  <path d="M40 50L50 45L60 50L50 55Z" fill="#10b981"/>
+  <circle cx="50" cy="50" r="3" fill="#10b981"/>
+  
+  <circle cx="300" cy="50" r="20" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="300" cy="50" r="8" fill="#f59e0b"/>
+  
+  <!-- Exercise icon -->
+  <circle cx="50" cy="150" r="20" fill="#3b82f6" opacity="0.2"/>
+  <path d="M45 145L50 140L55 145L50 150Z" fill="#3b82f6"/>
+  <path d="M40 150H60" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Warning indicators -->
+  <circle cx="300" cy="150" r="20" fill="#ef4444" opacity="0.2"/>
+  <path d="M300 135L295 155H305L300 135Z" fill="#ef4444"/>
+  <circle cx="300" cy="160" r="2" fill="#ef4444"/>
+</svg>

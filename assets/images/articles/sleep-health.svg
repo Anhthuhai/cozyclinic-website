@@ -1,0 +1,56 @@
+<svg width="350" height="200" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="200" fill="url(#sleepGradient)"/>
+  <defs>
+    <linearGradient id="sleepGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="50%" style="stop-color:#312e81"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Moon and stars night sky -->
+  <circle cx="280" cy="40" r="25" fill="#fbbf24" opacity="0.8"/>
+  <path d="M285 40C285 45 290 50 295 50C290 50 285 55 285 60C285 55 280 50 275 50C280 50 285 45 285 40Z" fill="#ffffff"/>
+  <circle cx="100" cy="30" r="2" fill="#ffffff"/>
+  <circle cx="150" cy="25" r="2" fill="#ffffff"/>
+  <circle cx="200" cy="35" r="2" fill="#ffffff"/>
+  <circle cx="320" cy="20" r="2" fill="#ffffff"/>
+  
+  <!-- Sleeping figure -->
+  <!-- Head -->
+  <ellipse cx="175" cy="100" rx="30" ry="35" fill="#fbbf24" opacity="0.8"/>
+  
+  <!-- Closed eyes -->
+  <path d="M165 95C167 93 170 93 172 95" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M178 95C180 93 183 93 185 95" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Peaceful smile -->
+  <path d="M170 110C172 112 178 112 180 110" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Pillow -->
+  <ellipse cx="175" cy="130" rx="45" ry="15" fill="#e5e7eb"/>
+  <ellipse cx="175" cy="125" rx="40" ry="12" fill="#f3f4f6"/>
+  
+  <!-- Blanket -->
+  <path d="M130 135C130 140 140 145 175 145C210 145 220 140 220 135C220 130 210 125 175 125C140 125 130 130 130 135Z" fill="#6366f1" opacity="0.6"/>
+  
+  <!-- Sleep zzz -->
+  <text x="220" y="80" font-family="Inter, sans-serif" font-size="18" fill="#e2e8f0" opacity="0.8">Z</text>
+  <text x="235" y="70" font-family="Inter, sans-serif" font-size="22" fill="#e2e8f0" opacity="0.6">Z</text>
+  <text x="255" y="60" font-family="Inter, sans-serif" font-size="26" fill="#e2e8f0" opacity="0.4">Z</text>
+  
+  <!-- Sleep cycle indicator -->
+  <circle cx="80" cy="120" r="30" fill="none" stroke="#6366f1" stroke-width="3" stroke-dasharray="5,5" opacity="0.6"/>
+  <circle cx="80" cy="120" r="15" fill="#6366f1" opacity="0.4"/>
+  <text x="80" y="160" font-family="Inter, sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle">8 tiếng</text>
+  
+  <!-- Relaxation elements -->
+  <circle cx="50" cy="60" r="20" fill="#10b981" opacity="0.3"/>
+  <path d="M45 60L50 55L55 60L50 65Z" fill="#10b981" opacity="0.6"/>
+  <text x="50" y="90" font-family="Inter, sans-serif" font-size="8" fill="#10b981" text-anchor="middle">Thư giãn</text>
+  
+  <!-- Sleep quality indicator -->
+  <rect x="270" y="140" width="60" height="8" fill="#1f2937" rx="4"/>
+  <rect x="270" y="140" width="48" height="8" fill="#10b981" rx="4"/>
+  <text x="300" y="160" font-family="Inter, sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle">Chất lượng</text>
+</svg>
